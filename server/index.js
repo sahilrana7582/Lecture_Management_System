@@ -24,7 +24,13 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'http://127.0.0.1:5173'],
+    origin: [
+      'http://localhost:5173',
+      'http://127.0.0.1:5173',
+      'https://lecture-management-system.vercel.app',
+      'https://lecture-management-system-git-main-sahilrana27582s-projects.vercel.app',
+      'https://lecture-management-system-sahilrana27582s-projects.vercel.app',
+    ],
     credentials: true,
   })
 );
