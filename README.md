@@ -60,3 +60,15 @@ To get started with the Lecture Management System locally, follow the steps belo
    git clone https://github.com/your-username/lecture_management_system.git
    cd lecture-management-system
    ```
+
+2. **INSTALL**:
+
+   ```bash
+   npm install
+   ```
+
+3. **RUN**:
+
+   ```bash
+   npm run dev
+   ```
