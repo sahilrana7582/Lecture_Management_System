@@ -21,7 +21,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { toast } from 'sonner';
 
-const MEDIA_API = 'http://localhost:8080/api/v1/media';
+const MEDIA_API = 'https://lecture-management-system-0m9j.onrender.com/api/v1/media';
 
 const LectureTab = () => {
   const [lectureTitle, setLectureTitle] = useState('');
@@ -59,7 +59,7 @@ const LectureTab = () => {
       formData.append('file', file);
       setMediaProgress(true);
       try {
-        const res = await axios.post(`${https://lecture-management-system-0m9j.onrender.com}/upload-video`, formData, {
+        const res = await axios.post(`${MEDIA_API}/upload-video`, formData, {
           onUploadProgress: ({ loaded, total }) => {
             setUploadProgress(Math.round((loaded * 100) / total));
           },
