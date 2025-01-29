@@ -59,7 +59,7 @@ const LectureTab = () => {
       formData.append('file', file);
       setMediaProgress(true);
       try {
-        const res = await axios.post(`${MEDIA_API}/upload-video`, formData, {
+        const res = await axios.post(`${https://lecture-management-system-0m9j.onrender.com}/upload-video`, formData, {
           onUploadProgress: ({ loaded, total }) => {
             setUploadProgress(Math.round((loaded * 100) / total));
           },
